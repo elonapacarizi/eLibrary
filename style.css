@@ -1034,16 +1034,23 @@ strong {
     font-weight: 600;
     color: rgba(0,0,0,0.8);
 }
+.book-btns {
+    display: flex;
+    gap:0.5rem;
+} 
 .book-btns a {
     padding: 1rem 2rem;
     font-size: 1.6rem;
     background-color: #e65100;
     margin-top: 1rem;
-    display: inline-block;
     text-decoration: none;
+    display: flex;
+    gap:0.5rem;
+    align-content: center;
     color: #eee;
     border-radius: 4px;
 }
+
 .book-description {
     max-width: 79%;
     margin: 4rem auto 0 auto;
