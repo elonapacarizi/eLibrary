@@ -61,7 +61,7 @@ body{
 
 .text{
     color:#fefefe;
-    padding-top: 10rem;
+    padding-top: 15rem;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -129,6 +129,9 @@ body{
     color:#efefef;
     display: grid;
     grid-template-columns: 0.5fr 3fr 1fr;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .nav-buttons{
     align-self: center; 
@@ -231,10 +234,46 @@ body{
     width: 2rem;
     height: 2rem;
 }
+/************* DROPDOWN CONTENT **********************/
+.dropdown-menu {
+    display:flex;
+    gap: 2rem;
+   background-color: #191919;
 
-/*************************************************************
-************************************************************
-********* HOME BOOKS Style***************************************/
+   box-shadow:   -20px 20px 20px rgba(0,0,0,0.5);
+   
+} 
+.dropdown-menu p {
+   font-size: 1.6rem;
+   padding: 1rem 4rem;
+   transition: all 0.2s;
+}
+.dropdown-menu p:hover {
+   background-color: #e65100;
+}
+.unordered-list li:last-child {
+   position: relative;
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   z-index: 1;
+   top: 108%;
+   right: 0%;
+}
+
+.unordered-list li:last-child:hover .dropdown-content{
+   display: block;
+   display: contents;
+   display: inline;
+}
+
+
+/************* DROPDOWN CONTENT END*******************/
+
+/****************NAVBAR END**********************************************/
+
+/********* HOME BOOKS Style***************************************/
 
 .home-main-container {
 
@@ -248,7 +287,7 @@ body{
     justify-content: space-between;
 }
 .search-box {
-    padding:5rem 0rem;
+    padding:10rem 0rem 5rem 0rem;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('img/croped-img.jpg');
     background-size: cover;
     display: flex;
