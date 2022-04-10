@@ -1,0 +1,219 @@
+
+/************** BOOKS LIST *********************/
+@media (max-width:1100px){
+    .books-of-the-day {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 80%;
+
+    }
+    .left-menu {
+        width: 15%;
+    }
+    .menu a{
+        font-size: 1.6rem;
+    } 
+    .home-book {
+        width: 20rem;
+        height: 30rem;
+    }
+    .home-book:nth-last-child(-n+3){
+        display: none;
+    }
+    /* .footer-info h3{
+        font-size: 2rem;
+    }
+    .contact-us ul,
+    .ctg-menu,.books-of-the-day,
+    .subsrcibe p:first-child{
+        font-size: 1.4rem;
+    }
+    .categories-list {
+        line-height: 2rem;
+    } */
+}
+@media (max-width:750px) {
+    .home-container {
+        gap:2rem;
+    }
+    .books-of-the-day{
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .home-book {
+        width: 20rem;
+        justify-self: start;
+    }
+    .left-menu {
+        width: 25%;
+    }
+    .home-book:nth-last-child(-n+4) {
+        display: none;
+    }
+    .menu h3 {
+        font-size: 1.5rem;
+        padding: 1rem 0rem;
+    }
+    .search-box {
+        padding: 10rem 0rem 3rem 0rem;
+    }
+    .home-search ,
+    .home-submit {
+        height: 3rem;
+    }
+    .home-search {
+        width: 30rem;
+    }
+    .home-book h3,
+    .menu a,
+    .pagination  {
+        font-size: 1.4rem;
+    }
+   
+}
+@media (max-width:550px) {
+   
+    .left-menu {
+        display: none;
+    }
+    .books-of-the-day {
+        margin: auto;
+        column-gap:2.5rem;
+        row-gap: 4.5rem;
+    }
+    .home-book:nth-last-child(-n+4) {
+        display: grid;
+        margin-bottom: 4rem;
+    }
+    .home-book {
+        width: 95%;
+        height: 27rem;
+    }
+    .home-search {
+        width: 30rem;
+    }
+}
+@media (max-width:400px) {
+    .home-container {
+        flex-direction: column;
+    }
+    .left-menu {
+        display: inline;
+        width: 90%;
+        margin: auto;
+    }
+     .menu li {
+        display: none;
+        position: relative;
+    } 
+    .search-box {
+        padding: 8rem 0rem 1rem 0rem;
+        justify-content: end;
+        padding-right: 2rem;
+    }
+    .home-search {
+        width: 40%;
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+    .home-submit {
+        width: 15%;
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+    .books-of-the-day {
+        grid-template-columns: 1fr;
+    }
+    .home-book h3 {
+        margin-bottom: 5rem;
+        font-size: 1.8rem;
+    }
+    .home-book {
+        height: fit-content;
+    }
+}
+/************** BOOKS LIST END ******************/
+
+/************** SIGN IN/UP START ********************/
+@media (max-width:1400px) {
+    .sign-up-quote,
+    .sign-in-quote{
+        width: 65%;
+    }
+}
+@media (max-width:1050px) {
+    .sign-in-wrapper,
+    .sign-up-wrapper {
+        justify-content: space-between;
+        gap:5rem;
+        padding: 15rem 10rem;
+    }
+    .sign-up-quote,
+    .sign-in-quote {
+        font-size: 2.5em;
+    }
+    .sign-in {
+        justify-content: end;
+    }
+}
+@media (max-width:950px) {
+    .sign-up-quote,
+    .sign-in-quote {
+        font-size: 2em;
+        width: 40%;
+    }
+}
+
+@media (max-width:900px) {
+    .sign-up-quote,
+    .sign-in-quote {
+        font-size: 2em;
+        width: 40%;
+    }
+}
+@media (max-width:810px) {
+    .sign-in-wrapper,
+    .sign-up-wrapper {
+        flex-direction: column;
+    }
+    .sign-up-quote,
+    .sign-in-quote {
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: center;
+    }
+    .sign-in-form,
+    .sign-up-form {
+        align-self: center;
+    }
+@media (max-width:750px) {
+    .sign-up-quote,
+    .sign-in-quote {
+        font-size: 1rem;
+    }
+
+    .input  {
+        padding: 1rem 0rem;
+    }
+   
+}
+@media (max-width:550px) {
+    .sign-up-quote,
+    .sign-in-quote {
+        display: none;
+    }
+    .sign-in-wrapper,
+    .sign-up-wrapper {
+        padding: 15rem 5rem 10rem 5rem;
+    }
+    .sign-in-form,
+    .sign-up-form {
+        width: 100%;
+    }
+    .sign-up,
+    .sign-in {
+        padding: 2rem 2rem 3rem 2rem;
+    }
+   
+}
+/************** SIGN IN/UP END  ******************/
