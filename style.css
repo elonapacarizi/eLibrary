@@ -915,18 +915,21 @@ body{
 .sign-in {
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    /* gap:2rem; */
     padding:2rem 3rem 4rem 3rem;
 }
 .note {
     font-size: 1rem;
     color:#e65100;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 .input {
     padding: 1.5rem 0rem;
     border: none;
     border-radius: 4px;
+    /*me margin*/
+    margin-bottom: 2rem;
 }
 .fname, .lname {
     width: 49%;
