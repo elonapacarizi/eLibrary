@@ -809,13 +809,12 @@ z-index: -1;
   width: 100%;
 }
 
-.footer-logo, .footer-menu, .footer-follow {
+ .footer-menu, .footer-follow {
   padding:3rem;
-  border-right:0.5px solid rgba(255,255,255,0.1) ;
 }
 
  .footer-logo {
-   padding: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
