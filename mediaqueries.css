@@ -20,17 +20,7 @@
     .home-book:nth-last-child(-n+3){
         display: none;
     }
-    /* .footer-info h3{
-        font-size: 2rem;
-    }
-    .contact-us ul,
-    .ctg-menu,.books-of-the-day,
-    .subsrcibe p:first-child{
-        font-size: 1.4rem;
-    }
-    .categories-list {
-        line-height: 2rem;
-    } */
+
 }
 @media (max-width:750px) {
     .home-container {
@@ -186,6 +176,7 @@
     .sign-up-form {
         align-self: center;
     }
+}
 @media (max-width:750px) {
     .sign-up-quote,
     .sign-in-quote {
@@ -217,3 +208,216 @@
    
 }
 /************** SIGN IN/UP END  ******************/
+
+/********************************************************/
+/******************** HOMEPAGE START ********************/
+/*********************************************************/
+
+
+/******************* Kategorite start *******************/
+@media (max-width:1000px) {
+    .kategorite {
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+    }
+}
+@media (max-width:850px) {
+    .kategorite {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:630px) {
+    .kategorite {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media (max-width:500px){
+    .second-component h1 {
+        font-size:3.4rem;
+    }
+   
+}
+@media (max-width:400px){
+    .kategorite {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+  
+    .second-component h1 {
+        font-size: 3rem;
+    }  
+}
+
+/******************* Kategorite End **************************/
+
+/******************* Pricing Offers Start *********************/
+@media (max-width:1100px) {
+    .component-offers {
+        flex-wrap: wrap;
+        gap:5rem
+    }
+}
+@media (max-width:1090px){
+    .component-offers {
+        flex: 0 0 1;
+    }
+    .second-offer {
+        width: 30rem;
+        height: 55rem;
+    }
+   .second-offer button {
+        padding: 1rem 3rem;;
+   }
+}
+/******************* Pricing Offers End ***********************/
+
+
+
+/****************** First Component Start **********************/
+@media (max-width:850px) {
+    .first-component {
+        flex-direction: column-reverse;
+        gap:2rem;
+        align-items: center;
+        width: 100%;
+    }
+    .component-img {
+        width: 80%;
+    }
+    .component-text {
+        max-width: 80%;
+        margin-bottom: 5rem;
+        text-justify:unset;
+    }
+    .component-text h1 {
+        text-align: center;
+    }
+    .component-text p {
+        margin-top: 1rem;
+    }
+}
+@media (max-width:500px) {
+    .component-text h1 {
+        font-size: 3.5rem;
+    }
+}
+
+
+/****************** First Component End ************************/
+
+/****************** Testimonial Start **************************/
+@media (max-width:1090px) {
+    .testimonial-content {
+        padding:2rem;
+    }
+}
+@media (max-width:995px) {
+    .testimonial-conten h1 {
+        font-size: 3rem;
+    }
+    .testimonial-conten p {
+        font-size: 1.4rem;
+    }
+    .testimonial-image img {
+        width: unset;
+    }
+    .arrow {
+        margin: 0px;
+    }
+    .quote-icon {
+        width: 10rem;
+    }
+}
+@media (max-width:830px) {
+    .testimonial-wrapper {
+        flex-direction: column;
+    }
+
+    .testimonial-image {
+        background-color: unset;
+        text-align: center;
+        position: relative;
+    }
+    .testimonial-image img {
+        border-radius: 0px;
+        width: 95%;
+        height: 10%;
+        position: relative;
+        border-radius: 60px 0 0 0;
+
+    }
+    .testimonial-content {
+        border: none;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 0 0 60px 0;
+    }
+    .arrow-container {
+        justify-content: center;
+    }
+
+@media (max-width:500px) {
+    .testimonial-content h1 {
+        font-size: 3rem;
+    }
+    .testimonial-container h1:first-child {
+        font-size: 3.4rem;
+    }
+}
+}
+/****************** Testimonial End ****************************/
+
+/******************* Hero Section  Start ************************/
+@media (max-width:1200px) {
+    .img-wrapper {
+        background-position: center;
+    }
+}
+@media (max-width:800px) {
+    .text h1 {
+        font-size: 5rem;
+    }
+    .text h2 {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .img-wrapper {
+        padding: 0.4rem 0 10rem 0;
+    }
+}
+
+
+@media (max-width:600px) {
+    .text h1 {
+        font-size: 4rem;
+    }
+    .text p {
+        line-height: 1.3;
+        width: 90%;
+    }
+}
+@media (max-width:400px) {
+    .text p {
+        font-size: 1.4rem;
+    }
+}
+/******************* Hero Section End ***************************/
+/******************* FOOTER START *******************************/
+@media (max-width:950px) {
+    .subscribe {
+        width: 15%;
+    }
+    .footer-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-logo, .footer-menu, .footer-follow {
+        border: none;
+    }
+    .subsrcibe {
+        margin: 2rem auto ;
+    }
+}
+/******************* FOOTER END *********************************/
