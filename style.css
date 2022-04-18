@@ -142,13 +142,13 @@ font-family: 'Poppins', sans-serif;
   width: 100%;
   background-color: rgb(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
-  position: relative;
+  position: fixed;
   z-index: 1;
 }
 .navbar {
   color: #efefef;
   display: flex;
-  /* position: fixed; */
+ /* position: fixed;  */
   width: 100%;
   justify-content: space-between;
   z-index: 1;
@@ -621,7 +621,7 @@ z-index: -1;
   margin-top: 5rem;
 }
 .third-component-text {
-  width: 80%;
+  width: 100%;
   margin: 2rem auto;
   text-align: center;
 }
