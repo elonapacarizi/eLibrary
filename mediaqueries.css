@@ -98,7 +98,6 @@
     } 
     .search-box {
         padding: 8rem 0rem 1rem 0rem;
-        justify-content: end;
         padding-right: 2rem;
     }
     .home-search {
@@ -135,9 +134,10 @@
     .sign-in-wrapper,
     .sign-up-wrapper {
         justify-content: space-between;
-        gap:5rem;
+        gap:2rem;
         padding: 15rem 10rem;
     }
+    
     .sign-up-quote,
     .sign-in-quote {
         font-size: 2.5em;
@@ -145,6 +145,7 @@
     .sign-in {
         justify-content: end;
     }
+    
 }
 @media (max-width:950px) {
     .sign-up-quote,
@@ -157,17 +158,6 @@
 @media (max-width:900px) {
     .sign-up-quote,
     .sign-in-quote {
-        font-size: 2em;
-        width: 40%;
-    }
-}
-@media (max-width:810px) {
-    .sign-in-wrapper,
-    .sign-up-wrapper {
-        flex-direction: column;
-    }
-    .sign-up-quote,
-    .sign-in-quote {
         font-size: 1.5rem;
         width: 90%;
         text-align: center;
@@ -175,6 +165,11 @@
     .sign-in-form,
     .sign-up-form {
         align-self: center;
+        width: 100%;
+    }
+    .sign-in-wrapper,
+    .sign-up-wrapper {
+        flex-direction: column;
     }
 }
 @media (max-width:750px) {
@@ -428,7 +423,7 @@
     }
     .logo-part {
       margin-right: auto;
-      padding: 0.5rem 2rem;
+      padding: 0.5rem 0;
       z-index: 999;
     }
     .f-nav {
@@ -500,4 +495,34 @@
   
   
 
-  
+  /************** BOOK CONTENT *************************/
+  @media (max-width:1000px) {
+
+    .book-img img {
+        width: 80%;
+        height: 100%;
+        text-align: center;
+      }
+      .book-btns{
+      flex-wrap: wrap;
+    justify-content: center;
+      }
+  }
+  @media (max-width:800px) {
+    .book-img img{
+        width: 100%;
+    }
+      .book-content {
+          flex-direction: column;
+          align-items: center;
+      }
+      .book-data {
+          text-align: center;
+      }
+      .book-data p {
+          margin-top: 0.8rem;
+      }
+      .book-description p {
+        text-align: justify;
+      }
+  }
