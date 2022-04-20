@@ -76,7 +76,7 @@
         margin-bottom: 4rem;
     }
     .home-book {
-        width: 95%;
+        width: 100%;
         height: 27rem;
     }
     .home-search {
@@ -231,6 +231,7 @@
     .second-component h1 {
         font-size:3.4rem;
     }
+    
    
 }
 @media (max-width:400px){
@@ -240,6 +241,9 @@
         align-content: center;
     }
   
+    .category {
+        width: 100%;
+    }
     .second-component h1 {
         font-size: 3rem;
     }  
