@@ -153,36 +153,8 @@ font-family: 'Poppins', sans-serif;
   justify-content: space-between;
   z-index: 1;
 }
-button {
-  font-family: 'Poppins', sans-serif;
-}
 
-.nav-buttons {
-  align-self: center;
-  display: flex;
-  font-family: 'Poppins', sans-serif;
 
-}
-.nav-buttons a {
-  text-decoration: none;
-  color: #efefef;
-}
-.nav-buttons button:first-child {
-  background-color: transparent;
-  border: 2px solid #03c6ae;
-  color: #efefef;
-  transition: all 0.1s;
-  margin-right: 1rem;
-}
-.nav-buttons button:first-child:hover {
-  background-color: #03c6ae;
-  color: #efefef;
-  font-weight: 500;
-  transition: all 0.1s;
-}
-.nav-buttons button:last-child:hover {
-  color: #efefef;
-}
 .navbar ul {
   list-style: none;
   display: flex;
@@ -190,18 +162,13 @@ button {
   gap: 2.5rem;
   justify-content: end;
 }
-
-.navbar button {
-  background-color: #03c6ae;
-  border: none;
-  width: 9rem;
-  height: 4rem;
-  color: #ededf1;
-  border-radius: 4px;
-  cursor: pointer;
+.f-nav {
+  display: flex;
+  width: 80%;
+  gap:5rem;
 }
+
 .navbar li:last-child {
-  margin-right: 10rem;
   display: flex;
   gap: 0.5rem;
   justify-content: flex-end;
@@ -223,12 +190,13 @@ button {
   color: #efefef;
   cursor: pointer;
   border-bottom: 4px solid #03c6ae;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.2)
-  );
+  ); */
 }
+
 
 .unordered-list {
   font-size: 1.6rem;
@@ -252,6 +220,63 @@ button {
   width: 2rem;
   height: 2rem;
 }
+
+.nav-buttons {
+  align-self: center;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+
+}
+.nav-buttons a {
+  text-decoration: none;
+  color: #efefef;
+  font-family: 'Poppins', sans-serif;
+}
+.nav-buttons li {
+  border-radius: 4px;
+  background-color: #03c6ae;
+  font-size: 1.6rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+.nav-buttons li:first-child {
+  background-color: transparent;
+  border: 1px solid #03c6ae;
+  color: #efefef;
+  transition: all 0.1s;
+  margin-right: 1rem;
+}
+.nav-buttons li:first-child:hover {
+  background-color: #03c6ae;
+  color: #efefef;
+  font-weight: 500;
+  transition: all 0.1s;
+}
+.menu-js {
+  width: 4rem;
+  stroke: #03c6ae;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top:5px;
+  right: 10px;
+}
+.f-nav {
+  display: flex;
+}
+
+/**media queries*/
+
+
+
+
+
+  
+
 /************* DROPDOWN CONTENT **********************/
 .dropdown-menu {
   padding: 20px;

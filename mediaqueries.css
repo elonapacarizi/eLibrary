@@ -421,3 +421,83 @@
     }
 }
 /******************* FOOTER END *********************************/
+/******************* NAVBAR STYLING ******************************/
+@media (max-width:1050px) {
+    body {
+       overflow-x:hidden ; 
+    }
+    .logo-part {
+      margin-right: auto;
+      padding: 0.5rem 2rem;
+      z-index: 999;
+    }
+    .f-nav {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.92);
+      backdrop-filter: blur(20px);
+     transform: translateX(100%);  
+     transition: transform 0.3s ease-out;
+  
+    }
+    .f-nav li,
+    .f-nav button {
+      opacity: 0;
+    }
+    .unordered-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 50vh;
+      font-size: 2rem;
+    }
+    .unordered-list li:last-child{
+      margin: 0;
+      justify-content: center;
+    }
+    .unordered-list a:hover,
+    .unordered-list li:hover{
+      color: #03c6ae;
+    }
+    .menu-js {
+      display: block;
+      z-index: 10;
+    }
+   .dropdown-menu {
+     opacity: 0;
+   }
+   .nav-buttons li {
+     font-size: 2rem;
+     padding: 1rem 4rem;
+   }
+  
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  
+  @keyframes navLinkFade{
+    from {
+          opacity: 0;
+          transform: translateX(50px);
+    }
+    to {
+          opacity: 1;
+          transform: translateX(0px);
+  
+    }
+  
+  }
+  
+  
+
+  
